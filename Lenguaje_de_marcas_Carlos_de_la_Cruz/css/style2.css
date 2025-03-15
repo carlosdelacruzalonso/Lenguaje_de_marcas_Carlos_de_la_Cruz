@@ -1,0 +1,17 @@
+.destacado{
+    color:blue;
+    font-weight: bold;
+}
+
+#importante{
+    color:red;
+    font-size: 20p;
+}
+
+.fernando{
+    background-color: aquamarine;
+}
+
+section{
+    background-color: chartreuse;
+}
