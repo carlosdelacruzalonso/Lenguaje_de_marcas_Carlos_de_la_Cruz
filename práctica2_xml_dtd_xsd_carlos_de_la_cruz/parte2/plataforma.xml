@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plataforma SYSTEM "plataforma.dtd">
+<plataforma fecha_publicacion="2025-09-15"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="plataforma.xsd">
+
+  <cursos>
+    <curso id="C001" codigo="PRG1">
+      <titulo>Programación I</titulo>
+      <nivel>Básico</nivel>
+      <modalidad>Presencial</modalidad>
+      <horas>60</horas>
+      <modulos>
+        <modulo clave="M01">
+          <nombre>Introducción a la programación</nombre>
+          <horas>20</horas>
+        </modulo>
+        <modulo clave="M02">
+          <nombre>Estructuras de control</nombre>
+          <horas>40</horas>
+        </modulo>
+      </modulos>
+    </curso>
+
+    <curso id="C002" codigo="BD01">
+      <titulo>Bases de Datos</titulo>
+      <nivel>Intermedio</nivel>
+      <modalidad>Online</modalidad>
+      <horas>80</horas>
+    </curso>
+  </cursos>
+
+  <alumnos>
+    <alumno id="A001" nif="12345678A">
+      <nombre>Laura Gómez</nombre>
+      <email>laura.gomez@alumnos.edu</email>
+      <telefono>666777888</telefono>
+    </alumno>
+    <alumno id="A002" nif="87654321B">
+      <nombre>Pedro Martín</nombre>
+      <email>pedro.martin@alumnos.edu</email>
+    </alumno>
+  </alumnos>
+
+  <matriculas>
+    <matricula id="M001" alumnoRef="A001" cursoRef="C001">
+      <fecha_alta>2025-09-01</fecha_alta>
+      <estado>activa</estado>
+    </matricula>
+    <matricula id="M002" alumnoRef="A002" cursoRef="C002">
+      <fecha_alta>2025-09-02</fecha_alta>
+      <estado>pendiente</estado>
+    </matricula>
+  </matriculas>
+
+  <evaluaciones>
+    <evaluacion id="E001" matriculaRef="M001">
+      <instrumento>Examen final</instrumento>
+      <convocatoria>Ordinaria</convocatoria>
+      <nota>8.5</nota>
+    </evaluacion>
+    <evaluacion id="E002" matriculaRef="M002">
+      <instrumento>Trabajo práctico</instrumento>
+      <convocatoria>Extraordinaria</convocatoria>
+      <nota>7.0</nota>
+    </evaluacion>
+  </evaluaciones>
+
+</plataforma>
